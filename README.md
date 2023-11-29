@@ -60,7 +60,7 @@ Pour intégrer la bibliothèque `libft` dans votre projet, suivez ces étapes :
 
 1. Clonez ce référentiel sur votre machine locale.
    ```bash
-   git clone https://github.com/votre_nom/lib42.git
+   git clone https://github.com/Lilien86/42-ft_printf.git
    ```
 	```bash
   	cd lib42
