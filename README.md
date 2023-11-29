@@ -62,6 +62,26 @@ Pour intégrer la bibliothèque `libft` dans votre projet, suivez ces étapes :
    ```bash
    git clone https://github.com/votre_nom/lib42.git
    
-   ```bash
    cd lib42
+   
+   make
+   
+   make clean
+   
+   make fclean
+   
+   make re
+   
+## Utilisation des Fonctions
+
+### Compilation avec la bibliothèque `libft`
+
+Pour compiler votre programme avec la bibliothèque `libft`, suivez ces étapes :
+
+1. Assurez-vous que votre fichier source inclut le fichier d'en-tête `libft.h`.
+   ```c
+   #include "libft.h"
+2. Compilez le programme avec la bibliothèque libft.a.
+	```bash
+	gcc -o mon_programme mon_programme.c -L. -lft
   	
