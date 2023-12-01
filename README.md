@@ -1,6 +1,6 @@
 # lib42
 
-Le projet `libft` de l'école 42 consiste en la création d'une bibliothèque de fonctions de base, souvent présentes dans les bibliothèques standard du langage C, ainsi que quelques fonctions spécifiques à l'environnement pédagogique de 42.
+The libft project at 42 School involves creating a library of basic functions, often found in the standard libraries of the C language, as well as some functions specific to the educational environment at 42.
 
 
 ## Fonctions
@@ -42,7 +42,7 @@ Le projet `libft` de l'école 42 consiste en la création d'une bibliothèque de
 - `ft_putendl_fd`
 - `ft_putnbr_fd`
 
-## Fonctions Bonus
+## Bonus Functions
 
 - `ft_lstnew`
 - `ft_lstadd_front`
@@ -56,9 +56,9 @@ Le projet `libft` de l'école 42 consiste en la création d'une bibliothèque de
 
 ## Installation
 
-Pour intégrer la bibliothèque `libft` dans votre projet, suivez ces étapes :
+To integrate the libft library into your project, follow these steps:
 
-1. Clonez ce référentiel sur votre machine locale.
+1. Clone this repository to your local machine.
    ```bash
    git clone https://github.com/Lilien86/42-Libft
    ```
@@ -75,17 +75,17 @@ Pour intégrer la bibliothèque `libft` dans votre projet, suivez ces étapes :
    make re
    ```
    
-## Utilisation des Fonctions
+## Using the Functions
 
-### Compilation avec la bibliothèque `libft`
+### Using the Functions
 
-Pour compiler votre programme avec la bibliothèque `libft`, suivez ces étapes :
+To compile your program with the libft library, follow these steps:
 
-1. Assurez-vous que votre fichier source inclut le fichier d'en-tête `libft.h`.
+1. Ensure that your source file includes the header file libft.h.
    ```c
    #include "libft.h"
    ```
-2. Compilez le programme avec la bibliothèque libft.a.
+2. Compile the program with the libft.a library.
 	```bash
 	gcc -o mon_programme mon_programme.c -L. -lft
   	```
