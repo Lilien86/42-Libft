@@ -54,6 +54,10 @@ The libft project at 42 School involves creating a library of basic functions, o
 - `ft_lstiter`
 - `ft_lstmap`
 
+## and more 
+
+- `ft_atoi_base`
+
 ## Installation
 
 To integrate the libft library into your project, follow these steps:
