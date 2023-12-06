@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lauger <lauger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/01 14:09:58 by lauger            #+#    #+#             */
-/*   Updated: 2023/11/01 15:06:01 by lauger           ###   ########.fr       */
+/*   Created: 2023/11/01 14:08:01 by lauger            #+#    #+#             */
+/*   Updated: 2023/11/01 15:05:55 by lauger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_isalpha(int c)
 {
-	unsigned char	c_cpy;
-
-	c_cpy = (unsigned char)c;
-	if (c_cpy >= '0' && c_cpy <= '9')
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
 	else
 		return (0);
