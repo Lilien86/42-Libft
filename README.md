@@ -57,6 +57,7 @@ The libft project at 42 School involves creating a library of basic functions, o
 ## and more 
 
 - `ft_atoi_base`
+- `ft_list_remove_if`
 
 ## Installation
 

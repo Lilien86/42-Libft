@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/nfs/homes/lauger/Documents/PROJECT/lib.ft/gitperso",
-      "program": "/nfs/homes/lauger/Documents/PROJECT/lib.ft/gitperso/build/Debug/outDebug",
+      "cwd": "/nfs/homes/lauger/Documents/PROJECT/lib.ft/gitlibft/link_list",
+      "program": "/nfs/homes/lauger/Documents/PROJECT/lib.ft/gitlibft/link_list/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
