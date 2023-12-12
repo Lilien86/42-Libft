@@ -2,26 +2,19 @@ CFLAGS = -Wall -Wextra -Werror -I. -I./check_char -I./management_memory -I./stri
 NAME = libft.a
 CC = cc
 
-SRC_DI = ./check_char ./management_memory ./string
-SRC_BO_DI = ./link_list
+SRC_DI = ./check_char ./management_memory ./string ./link_list ./ft_printf
 
 SOURCES = $(foreach dir,$(SRC_DI),$(wildcard $(dir)/*.c))
-BONUS = $(wildcard $(SRC_BO_DI)/*.c)
 
 OBJECTS = $(SOURCES:.c=.o)
 
-OBJ_BONUS = $(BONUS:.c=.o)
-
 all: $(NAME)
 
-bonus: $(OBJECTS) $(OBJ_BONUS)
-	ar rcs $(NAME) $(OBJECTS) $(OBJ_BONUS)
-
-$(NAME): $(OBJECTS)
+$(NAME): $(OBJECTS) $(OBJ_BONUS)
 	ar rcs $(NAME) $(OBJECTS)
 
 clean:
-	rm -f $(OBJECTS) $(OBJ_BONUS)
+	rm -f $(OBJECTS)
 
 fclean: clean
 	rm -f $(NAME)
