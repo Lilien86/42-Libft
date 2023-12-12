@@ -6,7 +6,7 @@
 /*   By: lauger <lauger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 14:40:21 by lauger            #+#    #+#             */
-/*   Updated: 2023/11/23 13:27:23 by lauger           ###   ########.fr       */
+/*   Updated: 2023/12/12 10:08:29 by lauger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-char	*ft_strjoin(char *s1, char *s2)
+char	*ft_strjoin_modif(char *s1, char *s2)
 {
 	char	*str;
 	size_t	i;
