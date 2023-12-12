@@ -2,7 +2,7 @@ CFLAGS = -Wall -Wextra -Werror -I. -I./check_char -I./management_memory -I./stri
 NAME = libft.a
 CC = cc
 
-SRC_DI = ./check_char ./management_memory ./string ./link_list ./ft_printf
+SRC_DI = ./check_char ./management_memory ./string ./link_list ./ft_printf ./gnl
 
 SOURCES = $(foreach dir,$(SRC_DI),$(wildcard $(dir)/*.c))
 
