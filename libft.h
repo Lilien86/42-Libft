@@ -86,17 +86,19 @@ int     ft_putnbr_base_len_origin(int nbr, char *base);
 int     ft_putstr_len(char *str);
 
 /*#####################################
-####Get_Next_Line##############################
+####Get_Next_Line######################
 *///###################################
 
 char    *get_next_line(int fd);
 int     check_str_char(char *line, char *buffer);
-void    *ft_calloc(size_t count, size_t size);
 char    *ft_strjoin_modif(char *s1, char *s2);
 
 
-//EN PLUS
+/*#####################################
+####En Plus############################
+*///###################################
 
 int		ft_atoi_base(char *str, char *base);
+void    ft_free_tab(char **str);
 
 #endif
