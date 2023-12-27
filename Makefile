@@ -50,6 +50,8 @@ SOURCES += \
     ./string/ft_memmove.c \
     ./string/ft_strlcat.c \
     ./string/ft_toupper.c \
+    ./string/ft_strcpy_map.c \
+    ./string/ft_strlen_map.c \
     ./link_list/ft_lstmap.c \
     ./link_list/ft_lstnew.c \
     ./link_list/ft_lstclear.c \
