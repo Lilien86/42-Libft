@@ -1,42 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy_map.c                                    :+:      :+:    :+:   */
+/*   ft_free_lst.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lauger <lauger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/27 07:31:21 by lilien            #+#    #+#             */
-/*   Updated: 2024/01/06 09:56:03 by lauger           ###   ########.fr       */
+/*   Created: 2024/01/17 08:08:29 by lauger            #+#    #+#             */
+/*   Updated: 2024/01/17 08:13:22 by lauger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strcpy(char *dest, const char *src)
+void	ft_free_list(t_list *head)
 {
-	if (dest == NULL || src == NULL)
-		return ;
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*dest = '\0';
-}
+	t_list	*current;
+	t_list	*next_node;
 
-char	**ft_strcpy_map(char **original, int height, int width)
-{
-	int		i;
-	char	**cpy;
-
-	i = 0;
-	cpy = ft_calloc(height + 1, sizeof(char *));
-	while (i < height)
+	current = head;
+	while (current != NULL)
 	{
-		cpy[i] = ft_calloc((width + 1), sizeof(char));
-		ft_strcpy(cpy[i], original[i]);
-		i++;
+		next_node = current->next;
+		free(current);
+		current = next_node;
 	}
-	return (cpy);
 }

@@ -60,6 +60,9 @@ The libft project at 42 School involves creating a library of basic functions, o
 - `ft_list_remove_if`
 - `ft_strcpy_map`
 - `ft_strlen_map`
+- `ft_strcpy_map`
+- `ft_atol`
+- `ft_free_list`
 
 ## Installation
 

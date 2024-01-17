@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Wextra -Werror -I. -I./check_char -I./management_memory -I./string -I./link_list
+CFLAGS = -g -Wall -Wextra -Werror -I. -I./check_char -I./management_memory -I./string -I./link_list -fPIE
 NAME = libft.a
 CC = cc
 
@@ -52,6 +52,7 @@ SOURCES += \
     ./string/ft_toupper.c \
     ./string/ft_strcpy_map.c \
     ./string/ft_strlen_map.c \
+	./string/ft_atol.c \
     ./link_list/ft_lstmap.c \
     ./link_list/ft_lstnew.c \
     ./link_list/ft_lstclear.c \
@@ -60,13 +61,14 @@ SOURCES += \
     ./link_list/ft_lstadd_back.c \
     ./link_list/ft_lstiter.c \
     ./link_list/ft_lstlast.c \
-    ./link_list/ft_lstdelone.c
+    ./link_list/ft_lstdelone.c \
+	./link_list/ft_free_list.c
 
 OBJECTS = $(SOURCES:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS) $(OBJ_BONUS)
+$(NAME): $(OBJECTS)
 	ar rcs $(NAME) $(OBJECTS)
 
 clean:
